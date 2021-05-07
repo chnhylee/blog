@@ -1,0 +1,56 @@
+//在这里面写的内容是服务端返回给用户的一些提示信息
+const info = {
+    //1.成功提示
+    success:{
+        //1)文章操作成功提示
+        article:{
+            query:{type:'success',title:'成功',message:'文章查询成功'},//a.查询
+            upload:{type:'success',title:'成功',message:'文章上传成功'},//b.上传
+            update:{type:'success',title:'成功',message:'文章更新成功'},//c.更新
+            delete:{type:'success',title:'成功',message:'文章删除成功'},//d.删除
+        },
+        //2)评论操作成功提示
+        comment:{
+            post:{type:'success',title:'成功',message:'新增一条评论成功'},//a.新增
+            delete:{type:'success',title:'成功',message:'评论删除成功'},//b.删除
+        },
+        //3)用户操作成功提示
+        user:{
+            signup:{type:'success',title:'成功',message:'用户注册成功'},//a.注册
+            signin:{type:'success',title:'成功',message:'用户登录成功'},//b.登录
+            update:{type:'success',title:'成功',message:'用户信息修改成功'},//c.修改
+            block:{type:'success',title:'成功',message:'用户封禁成功'},//d.封禁
+            signupAdmin:{type:'success',title:'成功',message:'管理员注册成功'}//管理员注册
+        },
+        //4)token检验成功提示
+        token:{type:'success',title:'成功',message:'token校验成功'}
+    },
+    //2.失败提示(备用)
+    error:{
+        //1)文章操作失败提示
+        article:{
+            query:{type:'error',title:'失败',message:'文章查询失败'},//a.查询
+            upload:{type:'error',title:'失败',message:'文章上传失败'},//b.上传
+            update:{type:'error',title:'失败',message:'文章更新失败'},//c.更新
+            delete:{type:'error',title:'失败',message:'文章删除失败'},//d.删除
+        },
+        //2)评论操作失败提示
+        comment:{
+            post:{type:'error',title:'成功',message:'新增一条评论失败'},//a.新增
+            query:{type:'error',title:'失败',message:'评论查询失败'},//b.查询
+            delete:{type:'error',title:'失败',message:'评论删除失败'},//c.删除
+        },
+        //3)用户操作失败提示
+        user:{
+            signup:{type:'error',title:'失败',message:'用户注册失败'},//a.注册
+            signin:{type:'error',title:'失败',message:'用户登录失败'},//b.登录
+            update:{type:'error',title:'失败',message:'用户信息修改失败'},//c.修改
+            block:{type:'error',title:'失败',message:'用户封禁失败'},//d.封禁
+            list:{type:'error',title:'失败',message:'您无权访问用户列表'},//e.列表
+            signupAdmin:{type:'error',title:'失败',message:'管理员注册失败'}//管理员注册
+        },
+        //4)token检验失败提示
+        token:{type:'error',title:'失败',message:'token校验失败'}
+    }
+}
+module.exports = info;
